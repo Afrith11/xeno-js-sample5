@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATELIER 404 — FASHION BEYOND FORM // AVANT-GARDE DIGITAL LUXURY</title>
+  <meta name="description" content="ATELIER 404: Experimental digital luxury fashion house. Sculptural silhouettes, liquid memory textiles, and wearable digital artifacts.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23D7FF00%22>⚡</text></svg>">
+</head>
+<body data-page="home">
+
+  <!-- TOP LIVE STATUS BEACON -->
+  <aside class="atelier-live-status" aria-label="Atelier System Status">
+    <span class="status-beacon"></span>
+    <span class="status-text-live">ATELIER ONLINE</span>
+    <span>// COLLECTION 2026</span>
+    <span class="status-time" id="live-status-clock">UTC 00:00:00</span>
+  </aside>
+
+  <!-- DESKTOP FLOATING NAVIGATION RAIL (LEFT) -->
+  <nav class="floating-nav-rail" aria-label="Primary Navigation">
+    <div class="nav-rail-top">
+      <a href="index.html" class="nav-rail-brand" aria-label="Atelier 404 Home">
+        <span class="brand-glyph-404">404</span>
+        <span class="brand-title-full">ATELIER 404</span>
+      </a>
+    </div>
+
+    <div class="nav-rail-center">
+      <a href="index.html" class="nav-rail-item is-active" data-nav-target="index.html">
+        <span class="nav-item-num">[01]</span>
+        <span class="nav-item-label">DISCOVER</span>
+      </a>
+      <a href="collections.html" class="nav-rail-item" data-nav-target="collections.html">
+        <span class="nav-item-num">[02]</span>
+        <span class="nav-item-label">COLLECTIONS</span>
+      </a>
+      <a href="shop.html" class="nav-rail-item" data-nav-target="shop.html">
+        <span class="nav-item-num">[03]</span>
+        <span class="nav-item-label">SHOP</span>
+      </a>
+      <a href="journal.html" class="nav-rail-item" data-nav-target="journal.html">
+        <span class="nav-item-num">[04]</span>
+        <span class="nav-item-label">JOURNAL</span>
+      </a>
+      <a href="about.html" class="nav-rail-item" data-nav-target="about.html">
+        <span class="nav-item-num">[05]</span>
+        <span class="nav-item-label">ABOUT</span>
+      </a>
+    </div>
+
+    <div class="nav-rail-vertical-label">
+      ARCHIVE 026 // FORMS
+    </div>
+
+    <div class="nav-rail-bottom">
+      <button class="audio-sound-toggle" aria-label="Toggle Synthesizer Audio Feedback">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+        <span class="sound-toggle-label">AUDIO: OFF</span>
+      </button>
+
+      <button class="nav-rail-toggle" aria-label="Expand Navigation Rail" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- FLOATING UTILITY PANEL (RIGHT) -->
+  <aside class="floating-utility-panel" aria-label="Shopping Controls">
+    <button class="utility-btn" data-action="open-search" aria-label="Search Collection" title="Search (Press /)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+
+    <button class="utility-btn" data-action="open-wishlist" aria-label="View Wishlist" title="Archive Wishlist">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      </svg>
+      <span class="wishlist-count-badge" style="display: none;">0</span>
+    </button>
+
+    <button class="utility-btn" data-action="open-cart" aria-label="View Shopping Bag" title="Shopping Bag">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 0 1-8 0"></path>
+      </svg>
+      <span class="cart-count-badge" style="display: none;">0</span>
+    </button>
+  </aside>
+
+  <!-- MOBILE TOP BAR -->
+  <header class="mobile-top-header">
+    <a href="index.html" class="mobile-brand-mark">
+      <span class="brand-glyph-404">404</span>
+      <span style="font-family: var(--font-display); font-weight: 800; font-size: 16px;">ATELIER 404</span>
+    </a>
+
+    <div class="mobile-nav-actions">
+      <button class="utility-btn" style="width: 38px; height: 38px;" data-action="open-cart" aria-label="Shopping Bag">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+        </svg>
+        <span class="cart-count-badge" style="display: none;">0</span>
+      </button>
+
+      <button class="mobile-menu-trigger" aria-label="Open Mobile Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE FULL-SCREEN MENU OVERLAY -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <div class="brand-glyph-404">ATELIER 404</div>
+      <button class="mobile-nav-close" aria-label="Close Mobile Menu">
+        <span>[ CLOSE ✕ ]</span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">
+        <span class="m-idx">01</span> DISCOVER
+      </a>
+      <a href="collections.html" class="mobile-nav-link">
+        <span class="m-idx">02</span> COLLECTIONS
+      </a>
+      <a href="shop.html" class="mobile-nav-link">
+        <span class="m-idx">03</span> SHOP ALL
+      </a>
+      <a href="new-drops.html" class="mobile-nav-link">
+        <span class="m-idx">04</span> NEW DROPS
+      </a>
+      <a href="journal.html" class="mobile-nav-link">
+        <span class="m-idx">05</span> JOURNAL
+      </a>
+      <a href="about.html" class="mobile-nav-link">
+        <span class="m-idx">06</span> ABOUT
+      </a>
+      <a href="contact.html" class="mobile-nav-link">
+        <span class="m-idx">07</span> CONTACT
+      </a>
+      <a href="cart.html" class="mobile-nav-link">
+        <span class="m-idx">08</span> SHOPPING BAG
+      </a>
+    </nav>
+
+    <div class="mobile-nav-footer">
+      <div>ATELIER 404 // DIGITAL FASHION OBJECTS</div>
+      <div>PARIS — TOKYO — MILAN PROTOCOL LAB</div>
+      <div>ALL PRICES DISPLAYED IN INR (₹)</div>
+    </div>
+  </div>
+
+  <!-- MAIN VIEWPORT CONTENT -->
+  <main class="page-wrapper" id="main-content">
+
+    <!-- SECTION A: THE OPENING EXPERIENCE -->
+    <section class="hero-opening-section" aria-label="Opening Experience">
+      <div class="opening-meta-header">
+        <div class="opening-brand-id">
+          <div>ATELIER 404™</div>
+          <div>DIGITAL FASHION OBJECTS</div>
+          <div>ARCHIVE CAPSULE 026</div>
+        </div>
+        <div class="opening-collection-tag">
+          EDITION 2026 // PROTOTYPE ZERO
+        </div>
+      </div>
+
+      <div class="opening-composition">
+        <h1 class="opening-giant-headline">
+          <span class="headline-line-1" data-scramble>NOT FOUND.</span>
+          <span class="headline-line-2">NOT FOLLOWING.</span>
+        </h1>
+      </div>
+
+      <!-- Striking Fashion Campaign Photograph Overlapping Typography -->
+      <div class="opening-visual-hero">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=85" 
+             alt="ATELIER 404 Kinetic Monolith Overcoat Runway Hero" 
+             loading="eager" />
+        <div class="opening-visual-badge">
+          FIGURE 01 // KINETIC MONOLITH
+        </div>
+      </div>
+
+      <div class="opening-footer-row">
+        <div class="scroll-explore-pill">
+          <span class="scroll-indicator-line"></span>
+          <span>SCROLL TO EXPLORE ARCHIVE</span>
+        </div>
+
+        <div class="opening-tech-coords">
+          <div>LAT: 35.6762° N // LON: 139.6503° E</div>
+          <div>MEMBRANE DENSITY: 380 GSM // TITANIUM STITCH</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION B: THE COLLECTION MANIFESTO -->
+    <section class="section-manifesto" aria-label="Collection Manifesto">
+      <div class="manifesto-grid">
+        <div class="manifesto-text-stack">
+          <h2 class="manifesto-headline">
+            WHY <span class="accent-blue">FIT IN?</span>
+          </h2>
+          <p class="manifesto-statement">
+            Ordinary garments exist to make people blend into architectural walls. ATELIER 404 exists to dismantle that compliance. We design wearable disruptions—sculpted from liquid memory polymers, stainless steel filament, and zero-gravity tailoring.
+          </p>
+          <div class="manifesto-tags-cluster">
+            <span class="manifesto-tag tag-filled">AVANT-GARDE COUTURE</span>
+            <span class="manifesto-tag">ZERO FORM RESTRICTION</span>
+            <span class="manifesto-tag">NUMBERED PROTO-DROPS</span>
+            <span class="manifesto-tag">PARIS & TOKYO TWIN HUBS</span>
+          </div>
+        </div>
+
+        <div class="manifesto-visual-stack">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85" 
+               alt="Manifesto Avant-Garde Silhouette in Electric Lime" 
+               class="manifesto-primary-img" 
+               loading="lazy" />
+          <div class="manifesto-technical-card">
+            <div class="tech-card-header">// PROTOCOL SPECIFICATION 026</div>
+            <div>OBJECT: VOID DRAPED PARKA</div>
+            <div>STATUS: UNRESTRICTED KINETIC VOLUME</div>
+            <div>TENSILE STRENGTH: 18.4 kN/m²</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION C: THE OBJECT GALLERY (HORIZONTAL PRODUCT EXHIBITION) -->
+    <section class="section-object-gallery" aria-label="Curated Object Exhibition">
+      <div class="gallery-section-header">
+        <div class="gallery-title-group">
+          <div class="section-sub">// OBJECT GALLERY EXHIBITION</div>
+          <h2>DIGITAL FASHION OBJECTS</h2>
+        </div>
+
+        <div class="gallery-controls-group">
+          <span class="gallery-counter-text" id="gallery-counter">[ 01 // 08 ]</span>
+          <button class="gallery-nav-btn" id="gallery-prev-btn" aria-label="Previous Object" disabled>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="gallery-nav-btn" id="gallery-next-btn" aria-label="Next Object">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Horizontal scrolling track dynamically populated by gallery.js -->
+      <div class="horizontal-gallery-track" id="horizontal-gallery-track" tabindex="0" aria-label="Horizontal Object Carousel">
+        <!-- Javascript renders 8 curated objects here -->
+      </div>
+
+      <div class="gallery-progress-wrap">
+        <div class="gallery-scroll-progress" id="gallery-scroll-progress"></div>
+      </div>
+    </section>
+
+    <!-- SECTION D: THE 404 EXPERIMENT -->
+    <section class="section-404-experiment" id="experiment-404-container" aria-label="Interactive Installation">
+      <div class="experiment-container">
+        <div class="experiment-interactive-info">
+          <div class="experiment-badge">EXPERIMENTAL SIMULATION // LIVE RENDER</div>
+          <h2 class="experiment-headline">
+            ERROR 404:<br>
+            <span class="glitch-word" data-scramble>ORDINARY STYLE</span><br>
+            NOT FOUND.
+          </h2>
+          <p class="experiment-body">
+            Interact with the spatial distortion field. Move your pointer across the canvas to shift spatial alignment, reveal hidden garment wireframe geometry, and inspect digital structural layers.
+          </p>
+
+          <div class="experiment-controls-bar">
+            <button class="btn-atelier-outline" id="toggle-xray-btn">MODE: TOGGLE X-RAY WIREFRAME</button>
+            <button class="btn-atelier-outline" id="trigger-glitch-btn">PULSE GLITCH</button>
+          </div>
+
+          <div class="experiment-coords-display" id="experiment-coords-readout">
+            LAT: 35.6762° N // LON: 139.6503° E // DISTORTION: 0.0%
+          </div>
+        </div>
+
+        <div class="experiment-visual-stack">
+          <div class="exp-layer-canvas">
+            <img src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=1200&q=85" 
+                 alt="Distortion Visor Interactive Hologram" 
+                 loading="lazy" />
+            <div class="exp-wireframe-grid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION E: THE DROP ROOM (ASYMMETRIC MODULAR GRID) -->
+    <section class="section-drop-room" aria-label="The Drop Room">
+      <div class="drop-room-header">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 12px; color: var(--color-electric-lime); margin-bottom: 8px;">// CAPSULE 026 ALLOCATIONS</div>
+          <h2 style="font-family: var(--font-display); font-weight: 800; font-size: clamp(2.2rem, 5vw, 4.5rem); text-transform: uppercase;">THE DROP ROOM</h2>
+        </div>
+        <a href="shop.html" class="btn-atelier-outline">VIEW FULL ARCHIVE [14]</a>
+      </div>
+
+      <div class="drop-room-grid">
+        <!-- Massive Spotlight Tile (Hero) -->
+        <article class="drop-tile drop-tile-hero">
+          <div class="drop-tile-visual">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=85" alt="Kinetic Monolith Coat" loading="lazy" />
+          </div>
+          <div class="drop-tile-info">
+            <div class="drop-tile-tagline">
+              <span>OBJ-MN-01 // RUNWAY PIECE</span>
+              <span>[ ONLY 3 LEFT ]</span>
+            </div>
+            <h3 class="drop-tile-title"><a href="product.html?id=obj-404-01">KINETIC MONOLITH COAT</a></h3>
+            <div class="drop-tile-meta-row">
+              <span class="drop-tile-price">₹46,500</span>
+              <button class="btn-small-lime" onclick="window.AtelierCart.addItem('obj-404-01'); window.openQuickCartDrawer();">+ ACQUIRE OBJECT</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Medium Vertical Tile -->
+        <article class="drop-tile drop-tile-vert">
+          <div class="drop-tile-visual">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85" alt="Void Draped Parka" loading="lazy" />
+          </div>
+          <div class="drop-tile-info">
+            <div class="drop-tile-tagline">
+              <span>OBJ-VD-02 // WATERPROOF 30K</span>
+              <span>[ DROP 026 ]</span>
+            </div>
+            <h3 class="drop-tile-title"><a href="product.html?id=obj-404-02">VOID DRAPED PARKA</a></h3>
+            <div class="drop-tile-meta-row">
+              <span class="drop-tile-price">₹38,200</span>
+              <button class="btn-small-lime" onclick="window.AtelierCart.addItem('obj-404-02'); window.openQuickCartDrawer();">+ ADD</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Wide Horizontal Banner Tile -->
+        <article class="drop-tile drop-tile-wide">
+          <div class="drop-tile-visual" style="height: 100%;">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=85" alt="Cyber-Archive Tailored Blazer" loading="lazy" />
+          </div>
+          <div class="drop-tile-info" style="height: 100%; justify-content: center; gap: 16px;">
+            <div class="drop-tile-tagline">
+              <span>OBJ-TL-03 // SAVILE ROW DECONSTRUCTED</span>
+            </div>
+            <h3 class="drop-tile-title"><a href="product.html?id=obj-404-03">CYBER-ARCHIVE TAILORED BLAZER</a></h3>
+            <p style="font-size: 13px; color: var(--color-metallic-silver);">Virgin Merino wool interwoven with micro-tensile steel filament. Removable modular shoulder armor.</p>
+            <div class="drop-tile-meta-row">
+              <span class="drop-tile-price">₹32,400</span>
+              <button class="btn-small-lime" onclick="window.AtelierCart.addItem('obj-404-03'); window.openQuickCartDrawer();">+ ADD TO BAG</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Compact Technical Tile -->
+        <article class="drop-tile drop-tile-compact">
+          <div class="drop-tile-visual">
+            <img src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=1200&q=85" alt="Distortion Visor Chrono" loading="lazy" />
+          </div>
+          <div class="drop-tile-info">
+            <div class="drop-tile-tagline">
+              <span>OBJ-VS-04 // TITANIUM</span>
+            </div>
+            <h3 class="drop-tile-title"><a href="product.html?id=obj-404-04">DISTORTION VISOR</a></h3>
+            <div class="drop-tile-meta-row">
+              <span class="drop-tile-price">₹14,800</span>
+              <button class="btn-small-lime" onclick="window.AtelierCart.addItem('obj-404-04'); window.openQuickCartDrawer();">+ ADD</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION F: CAMPAIGN 026 -->
+    <section class="section-campaign" aria-label="Campaign 026 Showcase">
+      <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1600&q=85" 
+           alt="Atelier 404 Campaign 026 The Future Has A Fit" 
+           class="campaign-backdrop-img" 
+           loading="lazy" />
+
+      <div class="campaign-content-overlay">
+        <span class="campaign-label-pill">CAMPAIGN 026 // MONOLITH SERIES</span>
+        <h2 class="campaign-giant-title">
+          THE FUTURE<br>HAS A FIT.
+        </h2>
+        <div class="campaign-links-row">
+          <a href="collections.html" class="btn-atelier-primary">EXPLORE RUNWAY STILLS</a>
+          <a href="collection.html" class="btn-atelier-outline">DISCOVER KINETIC MONOLITH</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION G: THE DESIGN JOURNAL -->
+    <section class="section-design-journal" aria-label="Design Journal Editorial">
+      <div class="journal-section-header">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 12px; color: var(--color-cobalt-blue); margin-bottom: 8px;">// EDITORIAL CODEX</div>
+          <h2 style="font-family: var(--font-display); font-weight: 800; font-size: clamp(2.2rem, 5vw, 4.2rem); text-transform: uppercase;">THE DESIGN JOURNAL</h2>
+        </div>
+        <a href="journal.html" class="btn-atelier-outline" style="border-color: var(--color-graphite-deep); color: var(--color-graphite-deep);">READ FULL PUBLICATION</a>
+      </div>
+
+      <div class="journal-editorial-grid">
+        <!-- Story 01 -->
+        <article class="journal-card">
+          <div class="journal-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1534126511673-b6899657816a?auto=format&fit=crop&w=1000&q=85" alt="Dressing Outside the Lines" loading="lazy" />
+          </div>
+          <div class="journal-card-meta">
+            <span>ISSUE 01 // CRITIQUE</span>
+            <span>08 MIN READ</span>
+          </div>
+          <h3 class="journal-card-title"><a href="journal.html">DRESSING OUTSIDE THE LINES</a></h3>
+          <p class="journal-card-excerpt">
+            Why contemporary luxury became terrified of true architectural silhouettes and how digital tailoring liberates the body from standard anthropometry.
+          </p>
+          <a href="journal.html" class="journal-card-link">DISCOVER ESSAY →</a>
+        </article>
+
+        <!-- Story 02 -->
+        <article class="journal-card">
+          <div class="journal-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1000&q=85" alt="Fashion Without Permission" loading="lazy" />
+          </div>
+          <div class="journal-card-meta">
+            <span>ISSUE 02 // MANIFESTO</span>
+            <span>12 MIN READ</span>
+          </div>
+          <h3 class="journal-card-title"><a href="journal.html">FASHION WITHOUT PERMISSION</a></h3>
+          <p class="journal-card-excerpt">
+            An interview with the rogue cyber-textile lab in Kyoto fusing decommissioned Japanese aerospace titanium into wearable bias-cut drapery.
+          </p>
+          <a href="journal.html" class="journal-card-link">DISCOVER ESSAY →</a>
+        </article>
+
+        <!-- Story 03 -->
+        <article class="journal-card">
+          <div class="journal-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=1000&q=85" alt="Form Meets Function" loading="lazy" />
+          </div>
+          <div class="journal-card-meta">
+            <span>ISSUE 03 // MATERIALS</span>
+            <span>06 MIN READ</span>
+          </div>
+          <h3 class="journal-card-title"><a href="journal.html">FORM MEETS FUNCTION</a></h3>
+          <p class="journal-card-excerpt">
+            Breaking down the mechanics of shape-memory polymers that adapt to atmospheric humidity, freezing temperatures, and user velocity.
+          </p>
+          <a href="journal.html" class="journal-card-link">DISCOVER ESSAY →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION H: FINAL MANIFESTO -->
+    <section class="section-final-manifesto" aria-label="Closing Call To Action">
+      <div style="font-family: var(--font-mono); font-size: 13px; color: var(--color-electric-lime); margin-bottom: 24px; letter-spacing: 0.2em;">
+        // ARCHIVE FINAL DIRECTIVE
+      </div>
+      <h2 class="final-manifesto-headline">
+        BE DIFFERENT<br>
+        <span style="color: transparent; -webkit-text-stroke: 2px var(--color-electric-lime);">BY DESIGN.</span>
+      </h2>
+      <div class="final-manifesto-actions">
+        <a href="shop.html" class="btn-atelier-primary">SHOP THE DROP [CAPSULE 026]</a>
+        <a href="new-drops.html" class="btn-atelier-outline">RESERVE NUMBERED PROTOTYPE</a>
+      </div>
+    </section>
+
+    <!-- SECTION I: UNCONVENTIONAL FOOTER -->
+    <footer class="atelier-magazine-footer" aria-label="Site Footer">
+      <div class="footer-top-row">
+        <div class="footer-col-manifesto">
+          <div class="brand-glyph-404" style="font-size: 20px; padding: 6px 12px;">ATELIER 404</div>
+          <p>
+            An independent international digital luxury atelier creating avant-garde garments, cybernetic suiting, and sculptural fashion objects beyond conventional form.
+          </p>
+        </div>
+
+        <div class="footer-col-links">
+          <h4>// EXPLORE ARCHIVES</h4>
+          <ul>
+            <li><a href="shop.html">Shop All Objects</a></li>
+            <li><a href="new-drops.html">Limited Capsule Drops</a></li>
+            <li><a href="collections.html">Collections Directory</a></li>
+            <li><a href="collection.html">Kinetic Monolith Lookbook</a></li>
+            <li><a href="cart.html">View Shopping Bag</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-links">
+          <h4>// ATELIER PROTOCOLS</h4>
+          <ul>
+            <li><a href="journal.html">The Design Journal</a></li>
+            <li><a href="about.html">Studio & Materials Manifesto</a></li>
+            <li><a href="contact.html">VIP Client Concierge</a></li>
+            <li><a href="contact.html">Press & Runway Archives</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram [@atelier404]</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Oversized Wordmark -->
+      <div class="footer-giant-wordmark">
+        ATELIER 404
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 ATELIER 404. ALL RIGHTS RESERVED. FASHION BEYOND FORM.</div>
+        <div>ENCRYPTED PROTOCOL // TOKYO — PARIS — MILAN</div>
+        <button class="btn-back-to-top" aria-label="Return to top of page">
+          <span>BACK TO TOP ↑</span>
+        </button>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- SEARCH MODAL -->
+  <div class="atelier-search-modal" id="atelier-search-modal" role="dialog" aria-modal="true" aria-label="Search Catalog">
+    <div class="search-modal-header">
+      <div class="search-modal-title">// SEARCH ARCHIVE REPOSITORY [PRESS ESC TO EXIT]</div>
+      <button class="search-modal-close" aria-label="Close Search">[ CLOSE ✕ ]</button>
+    </div>
+
+    <div class="search-input-wrapper">
+      <input type="text" id="atelier-search-input" class="search-input-field" placeholder="QUERY OBJECT, MATERIAL, OR CODE..." autocomplete="off" />
+    </div>
+
+    <div id="search-results-container"></div>
+  </div>
+
+  <!-- WISHLIST SLIDE DRAWER -->
+  <aside class="atelier-slide-drawer" id="atelier-wishlist-drawer" role="dialog" aria-label="Archive Wishlist">
+    <div class="drawer-header">
+      <h3 class="drawer-title">
+        <span>ARCHIVE WISHLIST</span>
+        <span class="wishlist-count-badge" style="position: static;">0</span>
+      </h3>
+      <button class="drawer-close-btn wishlist-drawer-close">[ CLOSE ✕ ]</button>
+    </div>
+    <div class="drawer-content" id="wishlist-drawer-items"></div>
+  </aside>
+
+  <!-- QUICK CART SLIDE DRAWER -->
+  <aside class="atelier-slide-drawer" id="atelier-quick-cart-drawer" role="dialog" aria-label="Quick Shopping Bag">
+    <div class="drawer-header">
+      <h3 class="drawer-title">
+        <span>SHOPPING BAG</span>
+        <span class="cart-count-badge" style="position: static;">0</span>
+      </h3>
+      <button class="drawer-close-btn quick-cart-close">[ CLOSE ✕ ]</button>
+    </div>
+
+    <div class="drawer-content" id="quick-cart-items"></div>
+
+    <div class="drawer-footer">
+      <div class="drawer-subtotal-row">
+        <span>SUBTOTAL (INR):</span>
+        <span class="drawer-subtotal-val" id="quick-cart-subtotal">₹0</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="cart.html" class="btn-atelier-primary" style="width: 100%; text-align: center;">PROCEED TO CHECKOUT</a>
+        <a href="shop.html" class="btn-atelier-outline" style="width: 100%; text-align: center;" onclick="closeQuickCart()">CONTINUE EXPLORING</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="atelier-quickview-modal" id="atelier-quickview-modal" role="dialog" aria-modal="true" aria-label="Quick View Object">
+    <div class="quickview-dialog">
+      <button class="quickview-modal-close" aria-label="Close Quick View">✕</button>
+      <div class="qv-media">
+        <img src="" alt="" class="qv-main-img" />
+      </div>
+      <div class="qv-body">
+        <div>
+          <div class="qv-code">OBJ-404-01</div>
+          <h3 class="qv-title">PRODUCT TITLE</h3>
+          <div class="qv-price">₹0</div>
+          <p class="qv-desc"></p>
+          
+          <div style="font-family: var(--font-mono); font-size: 11px; margin-bottom: 8px;">SELECT SIZE:</div>
+          <div class="qv-sizes"></div>
+
+          <div style="font-family: var(--font-mono); font-size: 11px; margin-bottom: 8px;">SELECT COLORWAY:</div>
+          <div class="qv-colors"></div>
+        </div>
+
+        <div style="display: flex; gap: 12px; margin-top: 24px;">
+          <button class="btn-atelier-primary qv-add-btn" style="flex: 1;">+ ADD TO BAG</button>
+          <a href="#" class="btn-atelier-outline qv-full-link">FULL SPECS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/interactions.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

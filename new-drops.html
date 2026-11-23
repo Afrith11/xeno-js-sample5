@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEW DROPS // CAPSULE 026 — ATELIER 404</title>
+  <meta name="description" content="Exclusive limited edition drop allocations. Numbered avant-garde prototypes, vacuum-sealed packaging, and carbon-neutral express courier.">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23D7FF00%22>⚡</text></svg>">
+</head>
+<body data-page="drops">
+
+  <!-- TOP LIVE STATUS BEACON -->
+  <aside class="atelier-live-status" aria-label="Atelier System Status">
+    <span class="status-beacon"></span>
+    <span class="status-text-live">ATELIER ONLINE</span>
+    <span>// CAPSULE 026 LIVE</span>
+    <span class="status-time" id="live-status-clock">UTC 00:00:00</span>
+  </aside>
+
+  <!-- DESKTOP FLOATING NAVIGATION RAIL (LEFT) -->
+  <nav class="floating-nav-rail" aria-label="Primary Navigation">
+    <div class="nav-rail-top">
+      <a href="index.html" class="nav-rail-brand" aria-label="Atelier 404 Home">
+        <span class="brand-glyph-404">404</span>
+        <span class="brand-title-full">ATELIER 404</span>
+      </a>
+    </div>
+
+    <div class="nav-rail-center">
+      <a href="index.html" class="nav-rail-item" data-nav-target="index.html">
+        <span class="nav-item-num">[01]</span>
+        <span class="nav-item-label">DISCOVER</span>
+      </a>
+      <a href="collections.html" class="nav-rail-item" data-nav-target="collections.html">
+        <span class="nav-item-num">[02]</span>
+        <span class="nav-item-label">COLLECTIONS</span>
+      </a>
+      <a href="shop.html" class="nav-rail-item" data-nav-target="shop.html">
+        <span class="nav-item-num">[03]</span>
+        <span class="nav-item-label">SHOP</span>
+      </a>
+      <a href="journal.html" class="nav-rail-item" data-nav-target="journal.html">
+        <span class="nav-item-num">[04]</span>
+        <span class="nav-item-label">JOURNAL</span>
+      </a>
+      <a href="about.html" class="nav-rail-item" data-nav-target="about.html">
+        <span class="nav-item-num">[05]</span>
+        <span class="nav-item-label">ABOUT</span>
+      </a>
+    </div>
+
+    <div class="nav-rail-vertical-label">
+      CAPSULE 026 // DROPS
+    </div>
+
+    <div class="nav-rail-bottom">
+      <button class="audio-sound-toggle" aria-label="Toggle Audio Feedback">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        </svg>
+        <span class="sound-toggle-label">AUDIO: OFF</span>
+      </button>
+
+      <button class="nav-rail-toggle" aria-label="Expand Navigation Rail" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- FLOATING UTILITY PANEL (RIGHT) -->
+  <aside class="floating-utility-panel" aria-label="Shopping Controls">
+    <button class="utility-btn" data-action="open-search" aria-label="Search Collection">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+    <button class="utility-btn" data-action="open-wishlist" aria-label="Wishlist">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      </svg>
+      <span class="wishlist-count-badge" style="display: none;">0</span>
+    </button>
+    <button class="utility-btn" data-action="open-cart" aria-label="Shopping Bag">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+      </svg>
+      <span class="cart-count-badge" style="display: none;">0</span>
+    </button>
+  </aside>
+
+  <!-- MOBILE TOP BAR -->
+  <header class="mobile-top-header">
+    <a href="index.html" class="mobile-brand-mark">
+      <span class="brand-glyph-404">404</span>
+      <span style="font-family: var(--font-display); font-weight: 800; font-size: 16px;">ATELIER 404</span>
+    </a>
+    <div class="mobile-nav-actions">
+      <button class="utility-btn" style="width: 38px; height: 38px;" data-action="open-cart" aria-label="Shopping Bag">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+        </svg>
+        <span class="cart-count-badge" style="display: none;">0</span>
+      </button>
+      <button class="mobile-menu-trigger" aria-label="Open Mobile Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <div class="brand-glyph-404">ATELIER 404</div>
+      <button class="mobile-nav-close" aria-label="Close Mobile Menu">[ CLOSE ✕ ]</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link"><span class="m-idx">01</span> DISCOVER</a>
+      <a href="collections.html" class="mobile-nav-link"><span class="m-idx">02</span> COLLECTIONS</a>
+      <a href="shop.html" class="mobile-nav-link"><span class="m-idx">03</span> SHOP ALL</a>
+      <a href="new-drops.html" class="mobile-nav-link"><span class="m-idx">04</span> NEW DROPS</a>
+      <a href="journal.html" class="mobile-nav-link"><span class="m-idx">05</span> JOURNAL</a>
+      <a href="about.html" class="mobile-nav-link"><span class="m-idx">06</span> ABOUT</a>
+      <a href="contact.html" class="mobile-nav-link"><span class="m-idx">07</span> CONTACT</a>
+      <a href="cart.html" class="mobile-nav-link"><span class="m-idx">08</span> SHOPPING BAG</a>
+    </nav>
+  </div>
+
+  <main class="page-wrapper" id="main-content">
+
+    <!-- LIVE COUNTDOWN BANNER -->
+    <section class="drops-countdown-banner" aria-label="Drop Countdown">
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.15em; margin-bottom: 6px;">
+          // PROTOCOL WINDOW: LIMITED RELEASE 026
+        </div>
+        <h2 style="font-family: var(--font-display); font-weight: 900; font-size: clamp(1.8rem, 3.5vw, 3rem); text-transform: uppercase;">
+          ALLOCATION WINDOW CLOSES IN:
+        </h2>
+      </div>
+
+      <div class="drops-clock-val" id="drops-live-countdown">
+        04D 18H 32M 10S
+      </div>
+    </section>
+
+    <!-- DROP HEADER -->
+    <header class="shop-page-header">
+      <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-electric-lime); margin-bottom: 12px; letter-spacing: 0.15em;">
+        // EXCLUSIVE HIGH-TENSION PROTO-OBJECTS
+      </div>
+      <h1 class="shop-page-title">
+        CAPSULE 026 RELEASES
+      </h1>
+      <p style="font-size: 1.15rem; color: var(--color-metallic-silver); max-width: 720px; line-height: 1.6;">
+        Every garment in this drop is strictly limited, individual serial-number stamped onto brushed titanium hardware, and accompanied by an encrypted NFC physical authenticity tag.
+      </p>
+    </header>
+
+    <!-- EXCLUSIVE DROP CARDS -->
+    <section style="padding: 4vw;" aria-label="Drop Products">
+      <div class="drop-room-grid">
+
+        <!-- 01 Spotlight Piece -->
+        <article class="drop-tile drop-tile-hero">
+          <div class="drop-tile-visual">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=85" alt="Kinetic Monolith Coat" loading="lazy" />
+          </div>
+          <div class="drop-tile-info">
+            <div class="drop-tile-tagline">
+              <span>OBJ-MN-01 // 22/25 CLAIMED</span>
+              <span style="color: var(--color-accent-orange);">[ ONLY 3 LEFT ]</span>
+            </div>
+            <h3 class="drop-tile-title"><a href="product.html?id=obj-404-01">KINETIC MONOLITH COAT</a></h3>
+            <div class="drop-tile-meta-row">
+              <span class="drop-tile-price">₹46,500</span>
+              <button class="btn-small-lime" onclick="window.AtelierCart.addItem('obj-404-01'); window.openQuickCartDrawer();">+ SECURE ALLOCATION</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 Shearling Monolith -->
+        <article class="drop-tile drop-tile-vert">
+          <div class="drop-tile-visual">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=85" alt="Sculptural Shearling Monolith" loading="lazy" />
+          </div>
+          <div class="drop-tile-info">
+            <div class="drop-tile-tagline">
+              <span>OBJ-SC-10 // 09/10 CLAIMED</span>
+              <span style="color: var(--color-accent-orange);">[ FINAL PIECE ]</span>
+            </div>
+            <h3 class="drop-tile-title"><a href="product.html?id=obj-404-10">SCULPTURAL SHEARLING MONOLITH</a></h3>
+            <div class="drop-tile-meta-row">
+              <span class="drop-tile-price">₹68,000</span>
+              <button class="btn-small-lime" onclick="window.AtelierCart.addItem('obj-404-10'); window.openQuickCartDrawer();">+ CLAIM 1 OF 10</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 Chrono Reflective Bomber -->
+        <article class="drop-tile drop-tile-wide">
+          <div class="drop-tile-visual" style="height: 100%;">
+            <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1200&q=85" alt="Chrono-Reflective Bomber" loading="lazy" />
+          </div>
+          <div class="drop-tile-info" style="height: 100%; justify-content: center; gap: 16px;">
+            <div class="drop-tile-tagline">
+              <span>OBJ-CR-12 // 25/30 ALLOCATED</span>
+            </div>
+            <h3 class="drop-tile-title"><a href="product.html?id=obj-404-12">CHRONO-REFLECTIVE BOMBER 404</a></h3>
+            <p style="font-size: 13px; color: var(--color-metallic-silver);">Microscopic glass silicate bead fabric responding to directional headlights and camera flash. Removable flight harness included.</p>
+            <div class="drop-tile-meta-row">
+              <span class="drop-tile-price">₹34,900</span>
+              <button class="btn-small-lime" onclick="window.AtelierCart.addItem('obj-404-12'); window.openQuickCartDrawer();">+ ACQUIRE PIECE</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 Titanium Derby Boot -->
+        <article class="drop-tile drop-tile-compact">
+          <div class="drop-tile-visual">
+            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=85" alt="Titanium Exoskeleton Derby Boot" loading="lazy" />
+          </div>
+          <div class="drop-tile-info">
+            <div class="drop-tile-tagline">
+              <span>OBJ-BT-06 // 13/15 CLAIMED</span>
+            </div>
+            <h3 class="drop-tile-title"><a href="product.html?id=obj-404-06">TITANIUM DERBY BOOT</a></h3>
+            <div class="drop-tile-meta-row">
+              <span class="drop-tile-price">₹41,500</span>
+              <button class="btn-small-lime" onclick="window.AtelierCart.addItem('obj-404-06'); window.openQuickCartDrawer();">+ ADD</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DROP PROTOCOLS SECTION -->
+    <section style="background: var(--color-graphite-card); padding: 6vw 4vw; border-top: 1px solid var(--color-graphite-border); border-bottom: 1px solid var(--color-graphite-border);">
+      <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-electric-lime); margin-bottom: 16px;">// DISPATCH PROTOCOLS</div>
+      <h2 style="font-family: var(--font-display); font-weight: 800; font-size: clamp(2rem, 4vw, 3.5rem); text-transform: uppercase; margin-bottom: 32px;">HOW CAPSULE DROPS WORK</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+        <div style="border-top: 1px solid var(--color-electric-lime); padding-top: 20px;">
+          <div style="font-family: var(--font-mono); font-size: 12px; color: var(--color-electric-lime); margin-bottom: 10px;">[ PHASE 01 ]</div>
+          <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 10px;">NUMBERED RESERVATION</h4>
+          <p style="font-size: 14px; color: var(--color-metallic-silver); line-height: 1.6;">Once ordered, your object is etched with its serial number at the Kyoto prototyping annex.</p>
+        </div>
+
+        <div style="border-top: 1px solid var(--color-cobalt-blue); padding-top: 20px;">
+          <div style="font-family: var(--font-mono); font-size: 12px; color: var(--color-cobalt-blue); margin-bottom: 10px;">[ PHASE 02 ]</div>
+          <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 10px;">VACUUM SEALED PACKAGING</h4>
+          <p style="font-size: 14px; color: var(--color-metallic-silver); line-height: 1.6;">Garments are sealed in airtight nitrogen-flushed anti-static canisters to preserve textile memory.</p>
+        </div>
+
+        <div style="border-top: 1px solid var(--color-off-white); padding-top: 20px;">
+          <div style="font-family: var(--font-mono); font-size: 12px; color: var(--color-off-white); margin-bottom: 10px;">[ PHASE 03 ]</div>
+          <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 10px;">EXPRESS GLOBAL COURIER</h4>
+          <p style="font-size: 14px; color: var(--color-metallic-silver); line-height: 1.6;">Insured priority air dispatch directly to your coordinates with end-to-end encrypted tracking.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="atelier-magazine-footer" aria-label="Site Footer">
+      <div class="footer-top-row">
+        <div class="footer-col-manifesto">
+          <div class="brand-glyph-404" style="font-size: 20px; padding: 6px 12px;">ATELIER 404</div>
+          <p>An independent international digital luxury atelier creating avant-garde garments, cybernetic suiting, and sculptural fashion objects beyond conventional form.</p>
+        </div>
+        <div class="footer-col-links">
+          <h4>// EXPLORE ARCHIVES</h4>
+          <ul>
+            <li><a href="shop.html">Shop All Objects</a></li>
+            <li><a href="new-drops.html">Limited Capsule Drops</a></li>
+            <li><a href="collections.html">Collections Directory</a></li>
+            <li><a href="collection.html">Kinetic Monolith Lookbook</a></li>
+            <li><a href="cart.html">View Shopping Bag</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-links">
+          <h4>// ATELIER PROTOCOLS</h4>
+          <ul>
+            <li><a href="journal.html">The Design Journal</a></li>
+            <li><a href="about.html">Studio & Materials Manifesto</a></li>
+            <li><a href="contact.html">VIP Client Concierge</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-giant-wordmark">ATELIER 404</div>
+      <div class="footer-bottom-bar">
+        <div>© 2026 ATELIER 404. ALL RIGHTS RESERVED. FASHION BEYOND FORM.</div>
+        <div>ENCRYPTED PROTOCOL // TOKYO — PARIS — MILAN</div>
+        <button class="btn-back-to-top">BACK TO TOP ↑</button>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- SEARCH MODAL -->
+  <div class="atelier-search-modal" id="atelier-search-modal" role="dialog" aria-modal="true" aria-label="Search Catalog">
+    <div class="search-modal-header">
+      <div class="search-modal-title">// SEARCH ARCHIVE REPOSITORY [PRESS ESC TO EXIT]</div>
+      <button class="search-modal-close" aria-label="Close Search">[ CLOSE ✕ ]</button>
+    </div>
+    <div class="search-input-wrapper">
+      <input type="text" id="atelier-search-input" class="search-input-field" placeholder="QUERY OBJECT, MATERIAL, OR CODE..." autocomplete="off" />
+    </div>
+    <div id="search-results-container"></div>
+  </div>
+
+  <!-- WISHLIST DRAWER -->
+  <aside class="atelier-slide-drawer" id="atelier-wishlist-drawer" role="dialog" aria-label="Archive Wishlist">
+    <div class="drawer-header">
+      <h3 class="drawer-title">ARCHIVE WISHLIST</h3>
+      <button class="drawer-close-btn wishlist-drawer-close">[ CLOSE ✕ ]</button>
+    </div>
+    <div class="drawer-content" id="wishlist-drawer-items"></div>
+  </aside>
+
+  <!-- QUICK CART DRAWER -->
+  <aside class="atelier-slide-drawer" id="atelier-quick-cart-drawer" role="dialog" aria-label="Quick Shopping Bag">
+    <div class="drawer-header">
+      <h3 class="drawer-title">SHOPPING BAG</h3>
+      <button class="drawer-close-btn quick-cart-close">[ CLOSE ✕ ]</button>
+    </div>
+    <div class="drawer-content" id="quick-cart-items"></div>
+    <div class="drawer-footer">
+      <div class="drawer-subtotal-row">
+        <span>SUBTOTAL (INR):</span>
+        <span class="drawer-subtotal-val" id="quick-cart-subtotal">₹0</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="cart.html" class="btn-atelier-primary" style="width: 100%; text-align: center;">PROCEED TO CHECKOUT</a>
+      </div>
+    </div>
+  </aside>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/interactions.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
